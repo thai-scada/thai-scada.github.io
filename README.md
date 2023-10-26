@@ -1,7 +1,5 @@
-# ThaiSCADA Wiki
-{:.no_toc}
-
 * Will be replaced with the ToC, excluding the "Contents" header
+# ThaiSCADA Wiki
 {:toc}
 
 # xView Standard Drivers List
