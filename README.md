@@ -4,9 +4,6 @@
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-# Datasheet
-> xView Datasheet
-
 # xView Standard Drivers List
 > สามารถพัฒนา Driver เพิ่มเติมได้ง่าย หากมีรายละเอียดของ Protocol ในการสื่อสาร กรณีต้องการให้มี Driver สำหรับอุปกรณ์ของท่าน โปรดติดต่อตัวแทนจำหน่าย
 
