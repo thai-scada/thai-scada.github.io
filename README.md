@@ -4,9 +4,226 @@
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-# H1 header
+## Features Summary
 
-## H2 header
+> เป็นชุดของโปรแกรมคอมพิวเตอร์เพื่อการสื่อสารข้อมูล บันทึกข้อมูล และควบคุมการทํางานโดยอัตโนมัติ สำหรับระบบตรวจวัดทั่วไป หรือทํางานเฉพาะด้าน เช่น Energy Management System, BOD/COD Online, CEMs Online
+{.is-success}
+
+<table><tr><td style='vertical-align: top; width: 50%;'>
+     
+#### ระบบปฎิบัติการที่รองรับ
+1.	Microsoft Windows 7 SP1 / 8 / 10 หรือใหม่กว่า (x86 หรือ x64)
+2.	Microsoft Windows Server 2012 / 2016 หรือใหม่กว่า (x86 หรือ x64)
+3.	ชุดติดตั้งแบบ Graphic User Interface
+4.	สามารถทำงานผ่านหน้าจอ Graphic User Interface หรือทำงานเป็น Background Process ผ่าน Window Services ได้
+  
+#### การสื่อสารข้อมูลกับอุปกรณ์
+1.	รองรับการสื่อสารผ่าน Serial Communication (RS232, RS485, RS422) และ Network Communication (TCP/IP)
+2.	การสื่อสารข้อมูลทำผ่าน Standard Driver และสามารถพัฒนาให้ติดต่อกับ Hardware ชนิดต่าง ๆ เพิ่มเติมได้อีก
+3.	รองรับ Open Standard Protocol เช่น Modbus RTU / TCP, OPC
+4.	อ่านค่าข้อมูลต่อเนื่องแบบอัตโนมัติ ในระดับมิลลิวินาที หรือกำหนดช่วงเวลาในการอ่านค่าได้เอง
+  
+#### การแสดงผลข้อมูลผ่านกราฟแบบ Real Time
+1.	สร้างกราฟได้เอง ไม่จำกัดจำนวน สูงสุด 32 Parameters ต่อ 1 กราฟ
+2.	สามารถเก็บบันทึกค่าต่าง ๆ มาแสดงเป็นกราฟแบบ Real Time และแสดงย้อนหลัง
+3.	สามารถเปรียบเทียบหรือวิเคราะห์ข้อมูลระหว่างจุด หรือระหว่างคาบเวลาต่าง ๆ ได้
+4.	สามารถพิมพ์กราฟออกทางเครื่องพิมพ์ได้ทั้งสีและขาวดําทั่วไป พร้อมทั้งแสดงสัญลักษณ์เพื่อช่วย ให้อ่านกราฟได้ง่าย พร้อมแสดงค่า Minimum, Maximum และ Average
+5.	สามารถ Export เพื่อนําไปวิเคราะห์เพิ่มเติมใน Microsoft Excel หรือ Windows Application อื่น ๆ ได้
+6.	แสดงเป็นตารางและสั่งพิมพ์ได้ตามคาบเวลาที่เลือกได้เอง
+
+#### การแสดงผลข้อมูลผ่าน HMI (Human Machine Interface)
+1.	มีเครื่องมือสำหรับออกแบบ สร้าง และแก้ไข หน้าจอ HMI ได้เอง ไม่จำกัดจำนวน
+2.	รองรับการทำงานแบบ ลากและวาง (Drag and Drop)
+3.	มี Graphic Object พื้นฐานพร้อมใช้งาน
+4.	รองรับการแสดงผล HMI ผ่าน Web Browser* โดยไม่ต้องติดตั้งโปรแกรมเสริม (* Optional)
+5.	สามารถออก สร้าง และแก้ไข หน้าจอ HMI เพียงครั้งเดียว โดยรองรับการแสดงผลทั้งแบบ Desktop View และ Web View
+
+#### การบันทีกข้อมูล
+1.	สามารถจัดเก็บข้อมูลลงระบบฐานข้อมูลได้ มีโครงสร้างมาตรฐาน รองรับการเก็บข้อมูลจำนวนมาก
+2.	รองรับระบบฐานข้อมูล MySQL, PostgreSQL, Microsoft SQL Server, Oracle และ SQLite
+3.	ออกแบบการจัดเก็บข้อมูลได้เอง
+4.	รองรับการจัดเก็บข้อมูลตามช่วงเวลาที่กำหนด (Raw Data Logger) และตามเงื่อนไข (Process Control)
+
+#### การสั่งควบคุมอุปกรณ์
+1.	ออกแบบชุดเงื่อนไขสำหรับควบคุมและแจ้งเตือนได้เอง ไม่จำกัดจำนวน
+2.	สามารถกำหนดช่วงเวลาในการทำงานและลำดับความสำคัญของชุดเงื่อนไขได้
+3.	รองรับ Multiple Condition (เชื่อมด้วยตรรกะทางคณิตศาสตร์) และ Multiple Action (ส่งคำสั่งออกไปยังอุปกรณ์)
+4.	สามารถส่งข้อมูลออกไปสู่อุปกรณ์เพิ่มเติมชนิดอื่น เช่น ชุด PLC หรือ I/O Modules ต่าง ๆ ได้
+5.	ควบคุมการทํางานของอุปกรณ์ต่าง ๆ โดยอัตโนมัติผ่านทางจอภาพ โดยใช้เงื่อนไขจากค่าต่าง ๆ ที่ได้รับเข้ามา ชุดใดก็ได้ หรือใช้ประกอบกับค่ารวม
+6.	มีระบบตัดต่ออัตโนมัติเพื่อประหยัดพลังงานไฟฟ้า และลดค่าไฟฟ้าได้
+7.	พยากรณ์ค่าความต้องการไฟฟ้าสูงสุดได้
+8.	รองรับการเขียน Script สำหรับสั่งควบคุมด้วยภาษา C#
+
+</td><td style='vertical-align: top; width: 50%;'>
+    
+#### ความสามารถอื่น ๆ
+1.	สามารถกําหนดสูตร เพื่อคํานวณค่าแบบต่าง ๆ แบบ Real Time ได้ พร้อมหาค่ารวมและค่าเฉลี่ย และนํามาวิเคราะห์ร่วมกับค่าอื่น ๆ ได้
+2.	สามารถแจ้งเตือนเป็นข้อความภาษาไทยและอังกฤษเมื่อเกิดเหตุการณ์ตามที่กําหนดผ่านทาง Email*, SMS** หรือ Line** ได้ (* ส่ง Email ผ่าน SMTP Server ภายในองค์กร หรือ Online SMTP Server ผ่านผู้ให้บริการต่าง ๆ, ** Optional โดยอาจต้องทำงานร่วมกับ Hardware และต้องมีเครือข่าย Internet)
+3.	ส่งออกข้อมูลไปยังระบบอื่นได้ ผ่าน Protocol Modbus TCP/IP ได้* (* ฟังก์ชันมาตรฐานรองรับสูงสุด 64 Parameters)
+4.	สามารถส่งต่อข้อมูลไปยังส่วนกลางผ่านระบบเครือข่ายในรูปแบบของ RTU / Local Server กับ Center Server ได้* (* Optional)
+5.	สามารถกำหนดรหัสผ่านสำหรับการใช้งานส่วนแสดงผลแยกจากส่วนการตั้งค่าโปรแกรมและการควบคุมได้
+  
+#### Energy Management System
+1.	สื่อสารข้อมูลกับอุปกรณ์ Power Meter ได้หลากหลายรุ่น* และสามารถพัฒนาให้ติดต่อกับ Power Meter รุ่นอื่น ๆ เพิ่มเติมได้อีก (* รายการ Driver ที่รองรับ  https://wiki.scada.in.th/en/public/datasheet/drivers)
+2.	สามารถสร้างและจัดกลุ่มของ Power Meter ขึ้นภายในโปรแกรมได้ไม่จำกัด โดยแต่ละ Power Meter สามารถกำหนดให้นำมาบวกหรือลบตามเปอร์เซนต์ได้ รวมถึงสามารถจัดให้อยู่ในกลุ่มได้แตกต่างกันสูงสุด 32 กลุ่ม
+3.	สามารถสร้าง Virtual Power Meter ขึ้นภายในโปรแกรมได้จากการ Mapping ค่าที่อ่านได้จากอุปกรณ์อื่น ๆ เช่น PLC
+4.	สามารถกำหนด Profile ประเภทการใช้ไฟฟ้าได้เอง เช่น Flat Rate, Progressive Rate, TOD หรือ TOU และกำหนดได้มากกว่า 1 Profile เพื่อเปรียบเทียบได้
+5.	มีระบบ Advanced Energy เพื่อแสดงค่าข้อมูลทางพลังงานในเชิงสรุป เช่น ค่าหน่วยหรือค่าไฟฟ้าที่ใช้แยกตามรายวัน รายเดือน รายปี รวมถึงค่าความต้องการพลังงานไฟฟ้าสูงสุด (Max Demand) เป็นต้น โดยสามารถนำไปแสดงผลผ่านหน้าจอ HMI หรือระบบรายงานได้
+
+#### ระบบ Web Based Reports
+1.	Web Application ที่สามารถแสดงผลรายงานผ่าน Web Browser ได้
+2.	สามารถเข้าดูระบบรายงานผ่านเครือข่าย Intranet, Internet หรือ VPN ได้ (ขึ้นกับระบบเครือข่ายภายในองค์กร)
+3.	กำหนดข้อมูลที่จะแสดงผลได้เอง
+4.	แสดงข้อมูลในรูปแบบภูมิศาสตร์ผ่าน Google Map API
+5.	แสดงข้อมูลในรูปแบบ HMI (Human Machine Interface)
+6.	แสดงข้อมูลในรูปแบบตาราง
+7.	แสดงข้อมูลในรูปแบบกราฟเส้น กราฟแท่ง หรือกราฟวงกลม
+8.	แสดงข้อมูลรายงานการใช้พลังงานไฟฟ้าและค่าไฟฟ้า กรณีระบบ Energy Management System
+9.	รองรับการกรอกข้อมูลย้อนหลังเพื่อนำข้อมูลจากระบบอื่น ๆ มาแสดงผลร่วมกันได้
+10.	สามารถสั่งพิมพ์ข้อมูลและส่งออกข้อมูลในรูปแบบ Microsoft Excel, PDF, CSV ได้
+11.	มีระบบยืนยันตัวและกำหนดสิทธิ์การเข้าใช้งาน
+12.	มีระบบบันทึกและตรวจสอบประวัติการใช้งานระบบของผู้ใช้งาน
+13.	รองรับการสร้างรายงานแบบอัตโนมัติตามคาบเวลาที่กำหนด* (* Optional)
+
+#### ระบบ BOD/COD Online และ CEMs Online
+1.	มีระบบ Local Report แสดงรายงานด้วยข้อมูลชุดเดียวกันกับที่ส่งไปส่วนราชการ
+2.	รับข้อมูลจาก Analyzer หรือ Power Meter ได้หลากหลายชนิดกว่าโปรแกรมมาตรฐานของส่วน ราชการ เช่น Modbus RTU, Modbus TCP, OPCDA เป็นต้น
+3.	มีระบบ Pre Alarm แจ้งเตือนก่อนถึงจุด Alarm ของส่วนราชการ
+4.	สามารถใช้วัดข้อมูลภายในจุดอื่น ๆ ร่วมเพื่อตรวจสอบ หรือ ควบคุมภายใน โดยไม่ส่งไปส่วนราชการได้
+
+</td></tr></table>
+
+> หมายเหตุ : * ความสามารถที่ระบุบางข้ออาจเป็นตัวเลือกเพิ่มเติมจากโปรแกรมมาตรฐาน และต้องมี Hardware ประกอบเพิ่มเติมเพื่อทำงานร่วมกัน โปรดตรวจสอบกับตัวแทนจำหน่าย
+{.is-info}
+
+## Software Components
+> โครงสร้างมาตรฐาน มีความยืดหยุ่นสูง รองรับการทำงานตั้งแต่ชุดคอมพิวเตอร์เครื่องเดียว ไปจนถึงระบบ Network ขนาดใหญ่ และ Cloud Based System
+{.is-success}
+
+<p align="center">
+  <img src="https://dsm01pap006files.storage.live.com/y4mpwzu1UgzYNr5XwEVPhwKmSTBDBkQ9vYxkfAOGXBd13Sjv60byyejzby4jScNVzqzA8eNHWVh8AhQixaFGYC7GNIECKhc1KHUsmVF7K6kPrZWyGlLORj-naMvtTBnjRybAM9uPXLquaxl4h7ySqqJUWHqxA1UOYedeYKerijJuTNxFIzmU8qvlP1RbZnqx8sv?width=876&height=637&cropmode=none">
+<figcaption align = "center"><span style="font-size: small;">Fig.1 - xView Structure</span></figcaption>
+</p>
+
+## Standard Featutres
+### HMI (Human Machine Interface)
+
+> Standalone desktop HMI Viewer
+{.is-success}
+
+<p align="center">
+  <img src="https://dsm01pap006files.storage.live.com/y4mwb0fSlYXlfHvSHhkXiazRiq-Tn-XL7oTmwL7TTqSZSpMuM1yr-AX22MCitq33C6tU2V97fTgB6_DCTPUHCLBp3HRwbKS-edKbx1G8wc2ceuiuZmMikvgwCdtsEhf1AM8GideG5YVa7rtCsNH3Exh1jsRmJ5G8URnqYWn-TSsZ1AUH2OG7yhePGVEdwKc419K?width=3840&height=2144&cropmode=none">
+  <figcaption align = "center"><span style="font-size: small;">Fig.2 Standalone desktop HMI viewer</span></figcaption>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://dsm01pap006files.storage.live.com/y4mjG1f72k6su7m__T1a0b9cN2BQ4NzZdf9GJIBqcL90M7Nc30Oh3bo4tq9rXX5a-CZlKglc7oXsXDQMEsO1vrC69mBw4NMSTrh_Pw66CldDnAc9MQwp2sWAsNSo1Mu0-Tef-NQSY39m0-_ga8bmDhZHFkmWt3Rwj6gl76SIWgUGgGe8jN5wqCkWUH31DOqgyvh?width=3840&height=2144&cropmode=none">
+	<figcaption align = "center"><span style="font-size: small;">Fig.3 Standalone desktop HMI viewer</span></figcaption>
+</p>
+  
+---
+
+> xDraw HMI editor
+{.is-success}
+
+<p align="center">
+  <img src="https://dsm01pap006files.storage.live.com/y4mbw-onlXzCmZW5T9dJFPVmLa3-GypivOiwPHGy3KJQQVrRt4YXaIlrheJXgc_mUzUacmXlB41kPjpBAz0F51nmGo1q3ZffVJJII86PKTC50QZ7kE2NMPlJ5VHf1XTDNdXVlQJh4rBlru9CSAGjlt2BXMBOy817TTEGhhPF5pVcaM4qe08zxWZd2pzdVU-wM2E?width=895&height=542&cropmode=none">
+	<figcaption align = "center"><span style="font-size: small;">Fig.4 xDraw HMI editor</span></figcaption>
+</p>
+
+### Real Time Charts
+
+> Unlimit user defined real time charts
+{.is-success}
+
+<p align="center">
+  <img src="https://dsm01pap006files.storage.live.com/y4m_Inj-le3Sf3cG4IQlaMTVgS8_E7aYVMi9rJvL5pZjO3Yx82qaKWX2omVLWE67uYzdPjaGcb8SaAbhS8quQdlJBR25d_P5RLK2Xvsanek6s-NiwJYZOxxl2Z72cbSt5wgT1KL-DhKd-KaJ8K77XgkGcvrFumWtYkusgYXVOlaKNnRgWcL9fH7VpJYsjT45kQB?width=1033&height=627&cropmode=none">
+	<figcaption align = "center"><span style="font-size: small;">Fig.5 Real time charts</span></figcaption>
+</p>
+
+### Energy & Billing Profiles
+
+> Support a variety of billing profiles, TOU / TOD / Flat Rate / Progressive Rate / Shift / etc. 
+Profile's parameters can be customized
+{.is-success}
+
+<p align="center">
+  <img src="https://dsm01pap006files.storage.live.com/y4mG9RCDAL6P3tdxX7T9YD6G6tJrIp398gIFS1leOapf2hm8T39NGuT_UmPFQGjaef6TnxZV-MDVEwQWoMa62_jqB4sufl_cOOmmaxSrrCL4Q1wT0JHs-Z6bxL-8M3N2ktjJTUjeeu-afnCjVOryFc-HUUfrwo356XglyEfYI3u-gw-BXhjvFv6UrdvMjt9y83k?width=1713&height=1636&cropmode=none">
+	<figcaption align = "center"><span style="font-size: small;">Fig.6 Billing profiles</span></figcaption>
+</p>
+
+### User Set Points
+
+> Software controller feature built-in and able to communicate with hardware controller
+{.is-success}
+
+<p align="center">
+  <img src="https://dsm01pap006files.storage.live.com/y4mDiJ5GPtaToM0slZ6XCac3KxOmLxEeUqErimKFyl4O9sWy3NYcO66446XyakpjIWkrTDCrhKgUiCl1-3mC0g1A2KhgWMrnLCGEabTAylshQ8jY0RhTbHF0mgLZwFs4lyxWln1zA7saj3lfNtTH2TH_WSCfrZmOem0QmyLDwVKS69a6VS3WGnD8nw1D24GvUnC?width=797&height=573&cropmode=none">
+	<figcaption align = "center"><span style="font-size: small;">Fig.7 User set points</span></figcaption>
+</p>
+
+## System Requirements
+
+### Computer Hardware for Local Server / Standalone 
+- **Minimum**
+	- All modern CPUs should be ok
+	- 16 GB RAM
+  - 512 GB (or more) SSD
+- **Recommended**
+ 	- Workstation PC or Industrial PC
+  - High end CPU series likes Intel Core i7, i9 or AMD Ryzen 7, 9
+  - 16 GB RAM (or more)
+  - 1 TB (or more) SSD / NMVe with RAID supported
+  - 2 Ethernet Ports
+ - **Infrastructure**
+ 	- For more than 128 devices license we strongly recommend to separate Communication Server and Database Server
+  	- Physical or virtual machine
+    - Internet connection for remote support
+- **Hardlock**
+	- Must have 1 free physical or virtual USB port
+- **Display Monitor** 
+  	- At least 1920x1080 resolution
+    
+### Computer Hardware for Center Server
+- **Minimum**
+	- All modern CPUs should be ok
+	- 16 GB RAM
+  - 1 TB (or more) Storage
+- **Recommended**
+  - **Communication Server**
+    - Physical or Virtual Machine
+    - Server processor grade with at least 6 cores
+    - 16 GB RAM (or more)
+    - 512 GB (or more) SSD / NMVe with RAID supported
+    - 2 Ethernet Ports
+  - **Database Server**
+    - Physical or Virtual Machine
+    - Server processor grade with at least 6 cores
+    - 32 GB RAM (or more)
+    - 1 TB (or more) SSD / NMVe with RAID supported
+    - 2 Ethernet Ports
+  - **Web Application Server**
+    - Physical or Virtual Machine
+    - Server processor grade with at least 6 cores
+    - 16 GB RAM (or more)
+    - 512 GB (or more) SSD / NMVe with RAID supported
+    - 2 Ethernet Ports
+    
+>  Web Application Server อาจละเว้นได้ โดยสามารถติดตั้งส่วนของการแสดงผลบนเครื่อง Communication Server หรือ Database Server ได้ ทั้งนี้ขึ้นกับความเหมาะสมของโครงการและความต้องการของผู้ใช้งาน
+{.is-info}
+
+  
+### Software Licenses
+  - **Operating System**
+  	- Windows 10 or newer, Windows Server 2019 or newer
+    - Linux operating systems are supported, but not in all cases. Please contact our support for more information.
+  - **Database Server**
+  	- MySQL for maximum 64 devices license (Free License)
+    - Microsoft SQL Server for more than 64 devices license (Commercial License)
+    	- Recommend for latest version with Device CAL license model
+	
 
 # Datasheet
 > xView Datasheet
