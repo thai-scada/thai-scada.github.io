@@ -226,47 +226,43 @@
     
 #### ความสามารถอื่น ๆ
 - สามารถกําหนดสูตร เพื่อคํานวณค่าแบบต่าง ๆ แบบ Real Time ได้ พร้อมหาค่ารวมและค่าเฉลี่ย และนํามาวิเคราะห์ร่วมกับค่าอื่น ๆ ได้
-2.	สามารถแจ้งเตือนเป็นข้อความภาษาไทยและอังกฤษเมื่อเกิดเหตุการณ์ตามที่กําหนดผ่านทาง Email*, SMS** หรือ Line** ได้ (* ส่ง Email ผ่าน SMTP Server ภายในองค์กร หรือ Online SMTP Server ผ่านผู้ให้บริการต่าง ๆ, ** Optional โดยอาจต้องทำงานร่วมกับ Hardware และต้องมีเครือข่าย Internet)
-3.	ส่งออกข้อมูลไปยังระบบอื่นได้ ผ่าน Protocol Modbus TCP/IP ได้* (* ฟังก์ชันมาตรฐานรองรับสูงสุด 64 Parameters)
-4.	สามารถส่งต่อข้อมูลไปยังส่วนกลางผ่านระบบเครือข่ายในรูปแบบของ RTU / Local Server กับ Center Server ได้* (* Optional)
-5.	สามารถกำหนดรหัสผ่านสำหรับการใช้งานส่วนแสดงผลแยกจากส่วนการตั้งค่าโปรแกรมและการควบคุมได้
+-	สามารถแจ้งเตือนเป็นข้อความภาษาไทยและอังกฤษเมื่อเกิดเหตุการณ์ตามที่กําหนดผ่านทาง Email*, SMS** หรือ Line** ได้ (* ส่ง Email ผ่าน SMTP Server ภายในองค์กร หรือ Online SMTP Server ผ่านผู้ให้บริการต่าง ๆ, ** Optional โดยอาจต้องทำงานร่วมกับ Hardware และต้องมีเครือข่าย Internet)
+- ส่งออกข้อมูลไปยังระบบอื่นได้ ผ่าน Protocol Modbus TCP/IP ได้* (* ฟังก์ชันมาตรฐานรองรับสูงสุด 64 Parameters)
+- สามารถส่งต่อข้อมูลไปยังส่วนกลางผ่านระบบเครือข่ายในรูปแบบของ RTU / Local Server กับ Center Server ได้* (* Optional)
+- สามารถกำหนดรหัสผ่านสำหรับการใช้งานส่วนแสดงผลแยกจากส่วนการตั้งค่าโปรแกรมและการควบคุมได้
   
 #### Energy Management System
-1.	สื่อสารข้อมูลกับอุปกรณ์ Power Meter ได้หลากหลายรุ่น* และสามารถพัฒนาให้ติดต่อกับ Power Meter รุ่นอื่น ๆ เพิ่มเติมได้อีก (* รายการ Driver ที่รองรับ  https://wiki.scada.in.th/en/public/datasheet/drivers)
-2.	สามารถสร้างและจัดกลุ่มของ Power Meter ขึ้นภายในโปรแกรมได้ไม่จำกัด โดยแต่ละ Power Meter สามารถกำหนดให้นำมาบวกหรือลบตามเปอร์เซนต์ได้ รวมถึงสามารถจัดให้อยู่ในกลุ่มได้แตกต่างกันสูงสุด 32 กลุ่ม
-3.	สามารถสร้าง Virtual Power Meter ขึ้นภายในโปรแกรมได้จากการ Mapping ค่าที่อ่านได้จากอุปกรณ์อื่น ๆ เช่น PLC
-4.	สามารถกำหนด Profile ประเภทการใช้ไฟฟ้าได้เอง เช่น Flat Rate, Progressive Rate, TOD หรือ TOU และกำหนดได้มากกว่า 1 Profile เพื่อเปรียบเทียบได้
-5.	มีระบบ Advanced Energy เพื่อแสดงค่าข้อมูลทางพลังงานในเชิงสรุป เช่น ค่าหน่วยหรือค่าไฟฟ้าที่ใช้แยกตามรายวัน รายเดือน รายปี รวมถึงค่าความต้องการพลังงานไฟฟ้าสูงสุด (Max Demand) เป็นต้น โดยสามารถนำไปแสดงผลผ่านหน้าจอ HMI หรือระบบรายงานได้
+- สื่อสารข้อมูลกับอุปกรณ์ Power Meter ได้หลากหลายรุ่น* และสามารถพัฒนาให้ติดต่อกับ Power Meter รุ่นอื่น ๆ เพิ่มเติมได้อีก (* รายการ Driver ที่รองรับ  https://wiki.scada.in.th/en/public/datasheet/drivers)
+- สามารถสร้างและจัดกลุ่มของ Power Meter ขึ้นภายในโปรแกรมได้ไม่จำกัด โดยแต่ละ Power Meter สามารถกำหนดให้นำมาบวกหรือลบตามเปอร์เซนต์ได้ รวมถึงสามารถจัดให้อยู่ในกลุ่มได้แตกต่างกันสูงสุด 32 กลุ่ม
+- สามารถสร้าง Virtual Power Meter ขึ้นภายในโปรแกรมได้จากการ Mapping ค่าที่อ่านได้จากอุปกรณ์อื่น ๆ เช่น PLC
+- สามารถกำหนด Profile ประเภทการใช้ไฟฟ้าได้เอง เช่น Flat Rate, Progressive Rate, TOD หรือ TOU และกำหนดได้มากกว่า 1 Profile เพื่อเปรียบเทียบได้
+- มีระบบ Advanced Energy เพื่อแสดงค่าข้อมูลทางพลังงานในเชิงสรุป เช่น ค่าหน่วยหรือค่าไฟฟ้าที่ใช้แยกตามรายวัน รายเดือน รายปี รวมถึงค่าความต้องการพลังงานไฟฟ้าสูงสุด (Max Demand) เป็นต้น โดยสามารถนำไปแสดงผลผ่านหน้าจอ HMI หรือระบบรายงานได้
 
 #### ระบบ Web Based Reports
-1.	Web Application ที่สามารถแสดงผลรายงานผ่าน Web Browser ได้
-2.	สามารถเข้าดูระบบรายงานผ่านเครือข่าย Intranet, Internet หรือ VPN ได้ (ขึ้นกับระบบเครือข่ายภายในองค์กร)
-3.	กำหนดข้อมูลที่จะแสดงผลได้เอง
-4.	แสดงข้อมูลในรูปแบบภูมิศาสตร์ผ่าน Google Map API
-5.	แสดงข้อมูลในรูปแบบ HMI (Human Machine Interface)
-6.	แสดงข้อมูลในรูปแบบตาราง
-7.	แสดงข้อมูลในรูปแบบกราฟเส้น กราฟแท่ง หรือกราฟวงกลม
-8.	แสดงข้อมูลรายงานการใช้พลังงานไฟฟ้าและค่าไฟฟ้า กรณีระบบ Energy Management System
-9.	รองรับการกรอกข้อมูลย้อนหลังเพื่อนำข้อมูลจากระบบอื่น ๆ มาแสดงผลร่วมกันได้
-10.	สามารถสั่งพิมพ์ข้อมูลและส่งออกข้อมูลในรูปแบบ Microsoft Excel, PDF, CSV ได้
-11.	มีระบบยืนยันตัวและกำหนดสิทธิ์การเข้าใช้งาน
-12.	มีระบบบันทึกและตรวจสอบประวัติการใช้งานระบบของผู้ใช้งาน
-13.	รองรับการสร้างรายงานแบบอัตโนมัติตามคาบเวลาที่กำหนด* (* Optional)
+- Web Application ที่สามารถแสดงผลรายงานผ่าน Web Browser ได้
+- สามารถเข้าดูระบบรายงานผ่านเครือข่าย Intranet, Internet หรือ VPN ได้ (ขึ้นกับระบบเครือข่ายภายในองค์กร)
+- กำหนดข้อมูลที่จะแสดงผลได้เอง
+- แสดงข้อมูลในรูปแบบภูมิศาสตร์ผ่าน Google Map API
+- แสดงข้อมูลในรูปแบบ HMI (Human Machine Interface)
+- แสดงข้อมูลในรูปแบบตาราง
+- แสดงข้อมูลในรูปแบบกราฟเส้น กราฟแท่ง หรือกราฟวงกลม
+- แสดงข้อมูลรายงานการใช้พลังงานไฟฟ้าและค่าไฟฟ้า กรณีระบบ Energy Management System
+- รองรับการกรอกข้อมูลย้อนหลังเพื่อนำข้อมูลจากระบบอื่น ๆ มาแสดงผลร่วมกันได้
+- สามารถสั่งพิมพ์ข้อมูลและส่งออกข้อมูลในรูปแบบ Microsoft Excel, PDF, CSV ได้
+- มีระบบยืนยันตัวและกำหนดสิทธิ์การเข้าใช้งาน
+- มีระบบบันทึกและตรวจสอบประวัติการใช้งานระบบของผู้ใช้งาน
+- รองรับการสร้างรายงานแบบอัตโนมัติตามคาบเวลาที่กำหนด* (* Optional)
 
 #### ระบบ BOD/COD Online และ CEMs Online
-1.	มีระบบ Local Report แสดงรายงานด้วยข้อมูลชุดเดียวกันกับที่ส่งไปส่วนราชการ
-2.	รับข้อมูลจาก Analyzer หรือ Power Meter ได้หลากหลายชนิดกว่าโปรแกรมมาตรฐานของส่วน ราชการ เช่น Modbus RTU, Modbus TCP, OPCDA เป็นต้น
-3.	มีระบบ Pre Alarm แจ้งเตือนก่อนถึงจุด Alarm ของส่วนราชการ
-4.	สามารถใช้วัดข้อมูลภายในจุดอื่น ๆ ร่วมเพื่อตรวจสอบ หรือ ควบคุมภายใน โดยไม่ส่งไปส่วนราชการได้
-
-</td></tr></table>
+- มีระบบ Local Report แสดงรายงานด้วยข้อมูลชุดเดียวกันกับที่ส่งไปส่วนราชการ
+- รับข้อมูลจาก Analyzer หรือ Power Meter ได้หลากหลายชนิดกว่าโปรแกรมมาตรฐานของส่วน ราชการ เช่น Modbus RTU, Modbus TCP, OPCDA เป็นต้น
+- มีระบบ Pre Alarm แจ้งเตือนก่อนถึงจุด Alarm ของส่วนราชการ
+- สามารถใช้วัดข้อมูลภายในจุดอื่น ๆ ร่วมเพื่อตรวจสอบ หรือ ควบคุมภายใน โดยไม่ส่งไปส่วนราชการได้
 
 > หมายเหตุ : * ความสามารถที่ระบุบางข้ออาจเป็นตัวเลือกเพิ่มเติมจากโปรแกรมมาตรฐาน และต้องมี Hardware ประกอบเพิ่มเติมเพื่อทำงานร่วมกัน โปรดตรวจสอบกับตัวแทนจำหน่าย
-{.is-info}
 
 ## Software Components
 > โครงสร้างมาตรฐาน มีความยืดหยุ่นสูง รองรับการทำงานตั้งแต่ชุดคอมพิวเตอร์เครื่องเดียว ไปจนถึงระบบ Network ขนาดใหญ่ และ Cloud Based System
-{.is-success}
 
 <p align="center">
   <img src="https://dsm01pap006files.storage.live.com/y4mpwzu1UgzYNr5XwEVPhwKmSTBDBkQ9vYxkfAOGXBd13Sjv60byyejzby4jScNVzqzA8eNHWVh8AhQixaFGYC7GNIECKhc1KHUsmVF7K6kPrZWyGlLORj-naMvtTBnjRybAM9uPXLquaxl4h7ySqqJUWHqxA1UOYedeYKerijJuTNxFIzmU8qvlP1RbZnqx8sv?width=876&height=637&cropmode=none">
@@ -277,7 +273,6 @@
 ### HMI (Human Machine Interface)
 
 > Standalone desktop HMI Viewer
-{.is-success}
 
 <p align="center">
   <img src="https://dsm01pap006files.storage.live.com/y4mwb0fSlYXlfHvSHhkXiazRiq-Tn-XL7oTmwL7TTqSZSpMuM1yr-AX22MCitq33C6tU2V97fTgB6_DCTPUHCLBp3HRwbKS-edKbx1G8wc2ceuiuZmMikvgwCdtsEhf1AM8GideG5YVa7rtCsNH3Exh1jsRmJ5G8URnqYWn-TSsZ1AUH2OG7yhePGVEdwKc419K?width=3840&height=2144&cropmode=none">
@@ -294,7 +289,6 @@
 ---
 
 > xDraw HMI editor
-{.is-success}
 
 <p align="center">
   <img src="https://dsm01pap006files.storage.live.com/y4mbw-onlXzCmZW5T9dJFPVmLa3-GypivOiwPHGy3KJQQVrRt4YXaIlrheJXgc_mUzUacmXlB41kPjpBAz0F51nmGo1q3ZffVJJII86PKTC50QZ7kE2NMPlJ5VHf1XTDNdXVlQJh4rBlru9CSAGjlt2BXMBOy817TTEGhhPF5pVcaM4qe08zxWZd2pzdVU-wM2E?width=895&height=542&cropmode=none">
@@ -304,7 +298,6 @@
 ### Real Time Charts
 
 > Unlimit user defined real time charts
-{.is-success}
 
 <p align="center">
   <img src="https://dsm01pap006files.storage.live.com/y4m_Inj-le3Sf3cG4IQlaMTVgS8_E7aYVMi9rJvL5pZjO3Yx82qaKWX2omVLWE67uYzdPjaGcb8SaAbhS8quQdlJBR25d_P5RLK2Xvsanek6s-NiwJYZOxxl2Z72cbSt5wgT1KL-DhKd-KaJ8K77XgkGcvrFumWtYkusgYXVOlaKNnRgWcL9fH7VpJYsjT45kQB?width=1033&height=627&cropmode=none">
@@ -315,7 +308,6 @@
 
 > Support a variety of billing profiles, TOU / TOD / Flat Rate / Progressive Rate / Shift / etc. 
 Profile's parameters can be customized
-{.is-success}
 
 <p align="center">
   <img src="https://dsm01pap006files.storage.live.com/y4mG9RCDAL6P3tdxX7T9YD6G6tJrIp398gIFS1leOapf2hm8T39NGuT_UmPFQGjaef6TnxZV-MDVEwQWoMa62_jqB4sufl_cOOmmaxSrrCL4Q1wT0JHs-Z6bxL-8M3N2ktjJTUjeeu-afnCjVOryFc-HUUfrwo356XglyEfYI3u-gw-BXhjvFv6UrdvMjt9y83k?width=1713&height=1636&cropmode=none">
@@ -325,7 +317,6 @@ Profile's parameters can be customized
 ### User Set Points
 
 > Software controller feature built-in and able to communicate with hardware controller
-{.is-success}
 
 <p align="center">
   <img src="https://dsm01pap006files.storage.live.com/y4mDiJ5GPtaToM0slZ6XCac3KxOmLxEeUqErimKFyl4O9sWy3NYcO66446XyakpjIWkrTDCrhKgUiCl1-3mC0g1A2KhgWMrnLCGEabTAylshQ8jY0RhTbHF0mgLZwFs4lyxWln1zA7saj3lfNtTH2TH_WSCfrZmOem0QmyLDwVKS69a6VS3WGnD8nw1D24GvUnC?width=797&height=573&cropmode=none">
@@ -380,8 +371,6 @@ Profile's parameters can be customized
     - 2 Ethernet Ports
     
 >  Web Application Server อาจละเว้นได้ โดยสามารถติดตั้งส่วนของการแสดงผลบนเครื่อง Communication Server หรือ Database Server ได้ ทั้งนี้ขึ้นกับความเหมาะสมของโครงการและความต้องการของผู้ใช้งาน
-{.is-info}
-
   
 ### Software Licenses
   - **Operating System**
