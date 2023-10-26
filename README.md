@@ -1,4 +1,4 @@
-* Will be replaced with the ToC, excluding the "Contents" header
+* Will be replaced with the ToC
 {:toc}
 
 # xView Standard Drivers List
