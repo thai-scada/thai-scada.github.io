@@ -177,8 +177,7 @@
 
 # xView Indirect Drivers List
 
-> สามารถประยุกต์ใช้ Standard Modbus Generic Driver เพื่อสื่อสารกับ Protocol สมัยใหม่ เช่น RESTful API ผ่าน Indirect
-> Driver ได้
+> สามารถประยุกต์ใช้ Standard Modbus Generic Driver เพื่อสื่อสารกับ Protocol สมัยใหม่ เช่น RESTful API ผ่าน Indirect Driver ได้
 
 | Driver    | Description                          | Protocol    | Version        | Last Updated |
 |-----------|--------------------------------------|-------------|----------------|--------------|
