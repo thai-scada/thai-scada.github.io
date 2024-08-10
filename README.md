@@ -176,7 +176,7 @@
 | YTLPM             | Modbus for YTL Smart Meter                                  | One                     | 1.6.0.214 | 2017-09-15   |
 |                   |                                                             | DTS-353                 |           |              |
 
-# # <a name="xView-Indirect-Drivers-List"></a>xView Indirect Drivers List
+# <a name="xView-Indirect-Drivers-List"></a>xView Indirect Drivers List
 
 > สามารถประยุกต์ใช้ Standard Modbus Generic Driver เพื่อสื่อสารกับ Protocol สมัยใหม่ เช่น RESTful API ผ่าน Indirect Driver ได้
 
