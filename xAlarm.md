@@ -12,7 +12,7 @@
 
 ![01](https://github.com/user-attachments/assets/3bd79533-3710-412e-9429-8a7dd584897e)
 
-- หลังจากนั้นให้กด install และหลังจากนั้น จะปรากฎหน้าต่าง verions ของตัว install ให้กดช่องสี่เหลี่ยม หลังจากนั้นให้กด Next เพื่อดำเนินการต่อไป
+- หลังจากนั้นให้กด install และหลังจากนั้น จะปรากฎหน้าต่าง versions ของตัว install ให้กดช่องสี่เหลี่ยม หลังจากนั้นให้กด Next เพื่อดำเนินการต่อไป
 
 ![02](https://github.com/user-attachments/assets/650f5368-1f6b-454c-8ae6-e397e787e3e8)
 
@@ -128,13 +128,13 @@
 
 ### User Setting
 
-- Setting ในส่วนนี้จะเป็นการตั้งค่าจะเป็นการตั้งค่า User ที่จะนำมาใช้ในการรับ Setpoint จากตัวโปรแกรม xView
+- Setting ในส่วนนี้จะเป็นการตั้งค่าจะเป็นการตั้งค่า User ที่จะนำมาใช้ในการรับ Set Point จากตัวโปรแกรม xView
 
 ![16](https://github.com/user-attachments/assets/e9fa6449-4021-4486-b7f2-911e1a2322e4)
 
 ### Group Setting  
 
-- Setting ในส่วนนี้จะเป็นการตั้งค่าจะเป็นการตั้งค่า Group ที่จะนำมาใช้ในการรับ Setpoint จากตัวโปรแกรม xView โดยที่ Group สามารถเพิ่มหรือลบ User เข้าไปแต่ละกลุ่มได้
+- Setting ในส่วนนี้จะเป็นการตั้งค่าจะเป็นการตั้งค่า Group ที่จะนำมาใช้ในการรับ Set Point จากตัวโปรแกรม xView โดยที่ Group สามารถเพิ่มหรือลบ User เข้าไปแต่ละกลุ่มได้
 
 ![17](https://github.com/user-attachments/assets/226c507f-1552-40e1-a217-681462db2b6a)
 
