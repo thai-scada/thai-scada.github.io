@@ -1,7 +1,7 @@
 - [xView Standard Drivers List](#xView-Standard-Drivers-List)
 - [xView Indirect Drivers List](#xView-Indirect-Drivers-List)
 - [xView Datasheet](#xView-Datasheet)
-- [xAlarm](xAlarm.md)
+- [xAlarm User Manual](xAlarm.md)
 
 # <a name="xView-Standard-Drivers-List"></a>xView Standard Drivers List
 
