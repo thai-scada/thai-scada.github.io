@@ -33,6 +33,10 @@
 
 ![05](https://github.com/user-attachments/assets/475c71a6-5c52-4c36-9692-4428f8e765a0)
 
+## Setup Project ID
+
+- โปรดติดต่อฝ่ายสนับสนุนเพื่อดำเนินการในส่วนนี้
+
 ## Login
 
 - ให้ทำการเช็ค License ของโปรแกรมก่อนว่ามี    
