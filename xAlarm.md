@@ -2,7 +2,7 @@
 
 ## คู่มือการใช้งาน xAlarm
 
-***Version 2024.8.1.1, September 2014***
+***Version 2024.8.1.1, September 2024***
 
 ***Manual Revision 2024.8.1.1 (September 9, 2024)***
 
