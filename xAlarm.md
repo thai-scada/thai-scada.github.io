@@ -36,6 +36,8 @@
 ## Setup Project ID
 
 - โปรดติดต่อฝ่ายสนับสนุนเพื่อดำเนินการในส่วนนี้
+![image](https://github.com/user-attachments/assets/97cf77b3-4470-4c32-ba12-9db42a6f2bb5)
+
 
 ## Login
 
